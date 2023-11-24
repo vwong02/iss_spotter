@@ -40,7 +40,7 @@ const fetchMyIP = function(callback) {
 
 const fetchCoordsByIP = function(IP, callback) {
 
-  const url = "http://ipwho.is/66.23.30.156";
+  const url = `http://ipwho.is/${ IP }`;
 
   request(url, (error, response, body) => {
     // parse the returned body so we can check its information
